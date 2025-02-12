@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Meow+Script&family=Playwrite+IN:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:hsl(47, 88%, 63%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 50vh;
+    width: 90%;
+    max-width: 400px; /* Set a max-width for larger screens */
+    background-color: hsl(0, 0%, 100%);
+    border: 1.5px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0 hsl(0, 0%, 7%);
+    
+}
+
+.header{
+    height: 40%;
+    width: 90%;
+    border: 1px solid black;
+    margin: 5% auto;
+    background-image: url("images/illustration-article.svg");
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.figtree-googleFont {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.content{
+    margin-left: 10px;
+}
+
+.learning{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+#learn{
+    width: 20%;
+    background-color: hsl(47, 88%, 63%);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#learn span{
+    font-weight:bolder;
+}
+
+.html h2{
+    margin-left: 10px;
+}
+
+.html p{
+    color: hsl(0, 0%, 42%);
+    font-size: medium;
+    margin-left: 10px;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.img{
+    background-image: url("images/image-avatar.webp");
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer h4{
+    margin-left: 10px;
+}
+
+/* Media Queries for Mobile reponsiveness*/
+@media (max-width: 600px){
+    .container{
+        width: 95%;
+    }
+
+    .header{
+        height: 30%;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .img{
+        height: 40px;
+        width: 40px;
+    }
+}
